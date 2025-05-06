@@ -1,0 +1,183 @@
+/* Diseño moderno para index.html */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.hero {
+    text-align: center;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.modelos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.modelos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modelos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.modelo {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.modelo img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos para el menú desplegable del carrito */
+.menu-carrito {
+    position: relative;
+    display: inline-block;
+}
+
+#toggle-carrito {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#carrito-desplegable {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#carrito-desplegable h3 {
+    margin-top: 0;
+}
+
+#carrito-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrito-desplegable ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#carrito-desplegable ul li:last-child {
+    border-bottom: none;
+}
+
+#carrito-desplegable.oculto {
+    display: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}

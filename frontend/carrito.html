@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Chemo Autos</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="modelos.html"><i class="fas fa-car"></i> Autos</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registro">
+        <h2>Datos de compra</h2>
+        <form id="form-registro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+        </form>
+    </section>
+
+    <section class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-lista" class="carrito-lista">
+        </ul>
+        <div class="carrito-total">
+            <h3>Total: $<span id="carrito-total">0</span> MXN</h3>
+            <button id="confirmar-compra" class="btn-confirmar">Confirmar Compra</button>
+            <button id="otra-compra" class="btn-otra-compra">Realizar Otra Compra</button>
+        </div>
+    </section>
+
+    <section id="gracias-compra" style="display: none; text-align: center; margin-top: 2rem;"></section>
+
+    <footer>
+        <p>&copy; 2025 Chemo Autos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

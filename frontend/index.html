@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de carros</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Chemo Autos <i class="fas fa-car"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="modelos.html"><i class="fas fa-car"></i> Autos</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="descripcion">
+        <h2>Bienvenido a Chemo Autos</h2>
+        <p>En Chemo Autos, nos especializamos en ofrecerte los mejores modelos de autos con promociones exclusivas. Encuentra el vehículo perfecto para ti y disfruta de una experiencia de compra única.</p>
+    </section>
+
+    <section class="modelos">
+        <h2>Modelos destacados</h2>
+        <div class="modelos-grid">
+            <div class="modelo">
+                <img src="https://via.placeholder.com/300" alt="Chevrolet Camaro ZL1 Panther">
+                <h3>Chevrolet Camaro ZL1 Panther</h3>
+                <p>Año: 2024</p>
+                <p>Precio: $2,314,900 MXN</p>
+            </div>
+            <div class="modelo">
+                <img src="https://via.placeholder.com/300" alt="Ford Mustang GT">
+                <h3>Ford Mustang GT</h3>
+                <p>Año: 2025</p>
+                <p>Precio: $1,150,000 MXN</p>
+            </div>
+            <div class="modelo">
+                <img src="https://via.placeholder.com/300" alt="Porsche 911 Carrera">
+                <h3>Porsche 911 Carrera</h3>
+                <p>Año: 2025</p>
+                <p>Precio: $2,500,000 MXN</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="menu-carrito">
+        <button id="toggle-carrito">Carrito</button>
+        <div id="carrito-desplegable" class="oculto">
+            <h3>Carrito de Compras</h3>
+            <ul id="lista-carrito"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Chemo Autos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
